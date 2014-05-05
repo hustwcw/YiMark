@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBE12BD91917F28A0079870B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE12BD81917F28A0079870B /* UIKit.framework */; };
+		BBE12BDB1917F28A0079870B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE12BDA1917F28A0079870B /* Foundation.framework */; };
+		BBE12BDD1917F28A0079870B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE12BDC1917F28A0079870B /* CoreGraphics.framework */; };
+		BBE12BE31917F28A0079870B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBE12BE11917F28A0079870B /* InfoPlist.strings */; };
+		BBE12BE51917F28A0079870B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE12BE41917F28A0079870B /* main.m */; };
+		BBE12BE91917F28A0079870B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE12BE81917F28A0079870B /* AppDelegate.m */; };
+		BBE12BEB1917F28A0079870B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BBE12BEA1917F28A0079870B /* Default.png */; };
+		BBE12BED1917F28A0079870B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBE12BEC1917F28A0079870B /* Default@2x.png */; };
+		BBE12BEF1917F28A0079870B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBE12BEE1917F28A0079870B /* Default-568h@2x.png */; };
+		BBE12BF21917F28A0079870B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE12BF11917F28A0079870B /* ViewController.m */; };
+		BBE12BF51917F28A0079870B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE12BF31917F28A0079870B /* ViewController.xib */; };
+		BBE12BFD1917F28A0079870B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE12BFC1917F28A0079870B /* SenTestingKit.framework */; };
+		BBE12BFE1917F28A0079870B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE12BD81917F28A0079870B /* UIKit.framework */; };
+		BBE12BFF1917F28A0079870B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE12BDA1917F28A0079870B /* Foundation.framework */; };
+		BBE12C071917F28A0079870B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBE12C051917F28A0079870B /* InfoPlist.strings */; };
+		BBE12C0A1917F28A0079870B /* YiMarkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE12C091917F28A0079870B /* YiMarkTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BBE12C001917F28A0079870B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBE12BCB1917F28A0079870B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBE12BD31917F28A0079870B;
+			remoteInfo = YiMark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BBE12BD41917F28A0079870B /* YiMark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YiMark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBE12BD81917F28A0079870B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BBE12BDA1917F28A0079870B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BBE12BDC1917F28A0079870B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BBE12BE01917F28A0079870B /* YiMark-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YiMark-Info.plist"; sourceTree = "<group>"; };
+		BBE12BE21917F28A0079870B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BBE12BE41917F28A0079870B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BBE12BE61917F28A0079870B /* YiMark-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YiMark-Prefix.pch"; sourceTree = "<group>"; };
+		BBE12BE71917F28A0079870B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BBE12BE81917F28A0079870B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BBE12BEA1917F28A0079870B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BBE12BEC1917F28A0079870B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BBE12BEE1917F28A0079870B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BBE12BF01917F28A0079870B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BBE12BF11917F28A0079870B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BBE12BF41917F28A0079870B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		BBE12BFB1917F28A0079870B /* YiMarkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YiMarkTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBE12BFC1917F28A0079870B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		BBE12C041917F28A0079870B /* YiMarkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YiMarkTests-Info.plist"; sourceTree = "<group>"; };
+		BBE12C061917F28A0079870B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BBE12C081917F28A0079870B /* YiMarkTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YiMarkTests.h; sourceTree = "<group>"; };
+		BBE12C091917F28A0079870B /* YiMarkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YiMarkTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBE12BD11917F28A0079870B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE12BD91917F28A0079870B /* UIKit.framework in Frameworks */,
+				BBE12BDB1917F28A0079870B /* Foundation.framework in Frameworks */,
+				BBE12BDD1917F28A0079870B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBE12BF71917F28A0079870B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE12BFD1917F28A0079870B /* SenTestingKit.framework in Frameworks */,
+				BBE12BFE1917F28A0079870B /* UIKit.framework in Frameworks */,
+				BBE12BFF1917F28A0079870B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBE12BC91917F28A0079870B = {
+			isa = PBXGroup;
+			children = (
+				BBE12BDE1917F28A0079870B /* YiMark */,
+				BBE12C021917F28A0079870B /* YiMarkTests */,
+				BBE12BD71917F28A0079870B /* Frameworks */,
+				BBE12BD51917F28A0079870B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBE12BD51917F28A0079870B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBE12BD41917F28A0079870B /* YiMark.app */,
+				BBE12BFB1917F28A0079870B /* YiMarkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBE12BD71917F28A0079870B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBE12BD81917F28A0079870B /* UIKit.framework */,
+				BBE12BDA1917F28A0079870B /* Foundation.framework */,
+				BBE12BDC1917F28A0079870B /* CoreGraphics.framework */,
+				BBE12BFC1917F28A0079870B /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBE12BDE1917F28A0079870B /* YiMark */ = {
+			isa = PBXGroup;
+			children = (
+				BBE12BE71917F28A0079870B /* AppDelegate.h */,
+				BBE12BE81917F28A0079870B /* AppDelegate.m */,
+				BBE12BF01917F28A0079870B /* ViewController.h */,
+				BBE12BF11917F28A0079870B /* ViewController.m */,
+				BBE12BF31917F28A0079870B /* ViewController.xib */,
+				BBE12BDF1917F28A0079870B /* Supporting Files */,
+			);
+			path = YiMark;
+			sourceTree = "<group>";
+		};
+		BBE12BDF1917F28A0079870B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBE12BE01917F28A0079870B /* YiMark-Info.plist */,
+				BBE12BE11917F28A0079870B /* InfoPlist.strings */,
+				BBE12BE41917F28A0079870B /* main.m */,
+				BBE12BE61917F28A0079870B /* YiMark-Prefix.pch */,
+				BBE12BEA1917F28A0079870B /* Default.png */,
+				BBE12BEC1917F28A0079870B /* Default@2x.png */,
+				BBE12BEE1917F28A0079870B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BBE12C021917F28A0079870B /* YiMarkTests */ = {
+			isa = PBXGroup;
+			children = (
+				BBE12C081917F28A0079870B /* YiMarkTests.h */,
+				BBE12C091917F28A0079870B /* YiMarkTests.m */,
+				BBE12C031917F28A0079870B /* Supporting Files */,
+			);
+			path = YiMarkTests;
+			sourceTree = "<group>";
+		};
+		BBE12C031917F28A0079870B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBE12C041917F28A0079870B /* YiMarkTests-Info.plist */,
+				BBE12C051917F28A0079870B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBE12BD31917F28A0079870B /* YiMark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBE12C0D1917F28A0079870B /* Build configuration list for PBXNativeTarget "YiMark" */;
+			buildPhases = (
+				BBE12BD01917F28A0079870B /* Sources */,
+				BBE12BD11917F28A0079870B /* Frameworks */,
+				BBE12BD21917F28A0079870B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YiMark;
+			productName = YiMark;
+			productReference = BBE12BD41917F28A0079870B /* YiMark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BBE12BFA1917F28A0079870B /* YiMarkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBE12C101917F28A0079870B /* Build configuration list for PBXNativeTarget "YiMarkTests" */;
+			buildPhases = (
+				BBE12BF61917F28A0079870B /* Sources */,
+				BBE12BF71917F28A0079870B /* Frameworks */,
+				BBE12BF81917F28A0079870B /* Resources */,
+				BBE12BF91917F28A0079870B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBE12C011917F28A0079870B /* PBXTargetDependency */,
+			);
+			name = YiMarkTests;
+			productName = YiMarkTests;
+			productReference = BBE12BFB1917F28A0079870B /* YiMarkTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBE12BCB1917F28A0079870B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = JTangWang;
+			};
+			buildConfigurationList = BBE12BCE1917F28A0079870B /* Build configuration list for PBXProject "YiMark" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BBE12BC91917F28A0079870B;
+			productRefGroup = BBE12BD51917F28A0079870B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBE12BD31917F28A0079870B /* YiMark */,
+				BBE12BFA1917F28A0079870B /* YiMarkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBE12BD21917F28A0079870B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE12BE31917F28A0079870B /* InfoPlist.strings in Resources */,
+				BBE12BEB1917F28A0079870B /* Default.png in Resources */,
+				BBE12BED1917F28A0079870B /* Default@2x.png in Resources */,
+				BBE12BEF1917F28A0079870B /* Default-568h@2x.png in Resources */,
+				BBE12BF51917F28A0079870B /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBE12BF81917F28A0079870B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE12C071917F28A0079870B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BBE12BF91917F28A0079870B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBE12BD01917F28A0079870B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE12BE51917F28A0079870B /* main.m in Sources */,
+				BBE12BE91917F28A0079870B /* AppDelegate.m in Sources */,
+				BBE12BF21917F28A0079870B /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBE12BF61917F28A0079870B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE12C0A1917F28A0079870B /* YiMarkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BBE12C011917F28A0079870B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBE12BD31917F28A0079870B /* YiMark */;
+			targetProxy = BBE12C001917F28A0079870B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BBE12BE11917F28A0079870B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBE12BE21917F28A0079870B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BBE12BF31917F28A0079870B /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBE12BF41917F28A0079870B /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		BBE12C051917F28A0079870B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBE12C061917F28A0079870B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBE12C0B1917F28A0079870B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BBE12C0C1917F28A0079870B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBE12C0E1917F28A0079870B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YiMark/YiMark-Prefix.pch";
+				INFOPLIST_FILE = "YiMark/YiMark-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BBE12C0F1917F28A0079870B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YiMark/YiMark-Prefix.pch";
+				INFOPLIST_FILE = "YiMark/YiMark-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BBE12C111917F28A0079870B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YiMark.app/YiMark";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YiMark/YiMark-Prefix.pch";
+				INFOPLIST_FILE = "YiMarkTests/YiMarkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		BBE12C121917F28A0079870B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YiMark.app/YiMark";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YiMark/YiMark-Prefix.pch";
+				INFOPLIST_FILE = "YiMarkTests/YiMarkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBE12BCE1917F28A0079870B /* Build configuration list for PBXProject "YiMark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBE12C0B1917F28A0079870B /* Debug */,
+				BBE12C0C1917F28A0079870B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBE12C0D1917F28A0079870B /* Build configuration list for PBXNativeTarget "YiMark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBE12C0E1917F28A0079870B /* Debug */,
+				BBE12C0F1917F28A0079870B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BBE12C101917F28A0079870B /* Build configuration list for PBXNativeTarget "YiMarkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBE12C111917F28A0079870B /* Debug */,
+				BBE12C121917F28A0079870B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBE12BCB1917F28A0079870B /* Project object */;
+}
