@@ -1,0 +1,48 @@
+# xcode noise
+*~
+build/*
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+xcuserdata/*
+*.xcuserdatad
+project.xcworkspace/xcuserdata/*
+ECP4iPhone.xcodeproj/xcuserdata/*
+ECP4iPhone.xcodeproj/project.xcworkspace/*
+ECP4iPhone.xcodeproj/project.xcworkspace/xcuserdata/*
+ECP4iPhone.xcodeproj/xcshareddata/*
+
+# old skool
+.svn
+.hg
+CVS
+
+# osx noise
+.DS_Store
+profile
+
+# automatic backup files
+*~.nib
+*.swp
+*~
+*(Autosaved).rtfd/
+
+# other
+build_scripts/git_diff.diff
+build_scripts/trimed_files
+build_scripts/git_lines_count
+*.sublime-project
+*.sublime-workspace
+vendor/ynm3k/ynm3k-tmp
+vendor/ynm3k/ynm3k-reports
+simian_reports/simian.xml
+*reports/*
+
+# i18n temp strings
+LocalizableStrings/output.txt
+LocalizableStrings/tempOutput.txt
+LocalizableStrings/SendViewLocalize.strings
+LocalizableStrings/Localizable.strings

@@ -23,6 +23,7 @@
 		BBE12BFF1917F28A0079870B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE12BDA1917F28A0079870B /* Foundation.framework */; };
 		BBE12C071917F28A0079870B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBE12C051917F28A0079870B /* InfoPlist.strings */; };
 		BBE12C0A1917F28A0079870B /* YiMarkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE12C091917F28A0079870B /* YiMarkTests.m */; };
+		BBE12C141917F7A50079870B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BBE12C131917F7A50079870B /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		BBE12C061917F28A0079870B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BBE12C081917F28A0079870B /* YiMarkTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YiMarkTests.h; sourceTree = "<group>"; };
 		BBE12C091917F28A0079870B /* YiMarkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YiMarkTests.m; sourceTree = "<group>"; };
+		BBE12C131917F7A50079870B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		BBE12BC91917F28A0079870B = {
 			isa = PBXGroup;
 			children = (
+				BBE12C131917F7A50079870B /* Icon.png */,
 				BBE12BDE1917F28A0079870B /* YiMark */,
 				BBE12C021917F28A0079870B /* YiMarkTests */,
 				BBE12BD71917F28A0079870B /* Frameworks */,
@@ -236,6 +239,7 @@
 				BBE12BED1917F28A0079870B /* Default@2x.png in Resources */,
 				BBE12BEF1917F28A0079870B /* Default-568h@2x.png in Resources */,
 				BBE12BF51917F28A0079870B /* ViewController.xib in Resources */,
+				BBE12C141917F7A50079870B /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
