@@ -14,6 +14,21 @@
 
 @implementation ViewController
 
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"plist"];
+    NSLog(@"%@", plistPath);
+    NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
+    NSString *url = [dictionary objectForKey:@"Website"];
+    //NSLog(@"%@", url);
+    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
+    [self.view addSubview:webView];
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

@@ -10,10 +10,10 @@ build/*
 xcuserdata/*
 *.xcuserdatad
 project.xcworkspace/xcuserdata/*
-ECP4iPhone.xcodeproj/xcuserdata/*
-ECP4iPhone.xcodeproj/project.xcworkspace/*
-ECP4iPhone.xcodeproj/project.xcworkspace/xcuserdata/*
-ECP4iPhone.xcodeproj/xcshareddata/*
+*/xcuserdata/*
+*/project.xcworkspace/*
+*/project.xcworkspace/xcuserdata/*
+*/xcshareddata/*
 
 # old skool
 .svn
