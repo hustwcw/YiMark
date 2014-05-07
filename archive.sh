@@ -1,23 +1,16 @@
-
-# modify APPID, Bundle Display Name and the Website url
 if [ $# -ne 3 ];then
 echo "usage: argument 1:APPID 2:APPName 3:URL"
 exit 1
 fi
-APPID=$1
-APPName=$2
-URL=$3
 
-echo $2
+# modify APPID, Bundle Display Name and the Website url
+sed  -i -e "/CFBundleIdentifier/{n; s/\(<string>\).*\(<\/string>\)/\1com.yimark.$1\2/; }" ./YiMark/YiMark-Info.plist
+sed  -i -e "/CFBundleDisplayName/{n; s/\(<string>\).*\(<\/string>\)/\1$2\2/; }" ./YiMark/YiMark-Info.plist
+#/usr/libexec/plistbuddy -c "SET :CFBundleDisplayName "$2"" ./YiMark/YiMark-Info.plist
+#sed  -i -e "/Website/{n; s/\(<string>\).*\(<\/string>\)/\1$3\2/; }" ./YiMark/test.plist
+/usr/libexec/plistbuddy -c "SET :Website '$3'" ./YiMark/test.plist
 
-/usr/libexec/plistbuddy -c "SET :CFBundleDisplayName '$2'" ./YiMark/YiMark-Info.plist
-
-cat <<EOF > YiMark/test.plist
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>Website</key>
-	<string>$3</string>
-</dict>
-</plist>
+# 
+srcDir=`pwd`
+xcodebuild -target YiMark -sdk iphoneos build
+xcrun -sdk iphoneos PackageApplication -v "build/Release-iphoneos/YiMark.app" -o "$srcDir/build/release/$2_$1.ipa"
