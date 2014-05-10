@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 JTangWang. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface YiMarkTests : SenTestCase
+@interface YiMarkTests : XCTestCase
 
 @end

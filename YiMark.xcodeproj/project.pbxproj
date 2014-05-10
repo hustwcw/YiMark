@@ -19,7 +19,6 @@
 		BBE12BEF1917F28A0079870B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBE12BEE1917F28A0079870B /* Default-568h@2x.png */; };
 		BBE12BF21917F28A0079870B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE12BF11917F28A0079870B /* ViewController.m */; };
 		BBE12BF51917F28A0079870B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE12BF31917F28A0079870B /* ViewController.xib */; };
-		BBE12BFD1917F28A0079870B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE12BFC1917F28A0079870B /* SenTestingKit.framework */; };
 		BBE12BFE1917F28A0079870B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE12BD81917F28A0079870B /* UIKit.framework */; };
 		BBE12BFF1917F28A0079870B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE12BDA1917F28A0079870B /* Foundation.framework */; };
 		BBE12C071917F28A0079870B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBE12C051917F28A0079870B /* InfoPlist.strings */; };
@@ -55,8 +54,7 @@
 		BBE12BF01917F28A0079870B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BBE12BF11917F28A0079870B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BBE12BF41917F28A0079870B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		BBE12BFB1917F28A0079870B /* YiMarkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YiMarkTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBE12BFC1917F28A0079870B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		BBE12BFB1917F28A0079870B /* YiMarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YiMarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE12C041917F28A0079870B /* YiMarkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YiMarkTests-Info.plist"; sourceTree = "<group>"; };
 		BBE12C061917F28A0079870B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BBE12C081917F28A0079870B /* YiMarkTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YiMarkTests.h; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBE12BFD1917F28A0079870B /* SenTestingKit.framework in Frameworks */,
 				BBE12BFE1917F28A0079870B /* UIKit.framework in Frameworks */,
 				BBE12BFF1917F28A0079870B /* Foundation.framework in Frameworks */,
 			);
@@ -103,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				BBE12BD41917F28A0079870B /* YiMark.app */,
-				BBE12BFB1917F28A0079870B /* YiMarkTests.octest */,
+				BBE12BFB1917F28A0079870B /* YiMarkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,7 +111,6 @@
 				BBE12BD81917F28A0079870B /* UIKit.framework */,
 				BBE12BDA1917F28A0079870B /* Foundation.framework */,
 				BBE12BDC1917F28A0079870B /* CoreGraphics.framework */,
-				BBE12BFC1917F28A0079870B /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -202,8 +198,8 @@
 			);
 			name = YiMarkTests;
 			productName = YiMarkTests;
-			productReference = BBE12BFB1917F28A0079870B /* YiMarkTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = BBE12BFB1917F28A0079870B /* YiMarkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -211,8 +207,14 @@
 		BBE12BCB1917F28A0079870B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = JTangWang;
+				TargetAttributes = {
+					BBE12BD31917F28A0079870B = {
+						DevelopmentTeam = TV79JV4CVQ;
+					};
+				};
 			};
 			buildConfigurationList = BBE12BCE1917F28A0079870B /* Build configuration list for PBXProject "YiMark" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -330,6 +332,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B59FA7AD191D2B6000C774DF /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: hangzhou caizhu network technology co., LTD.";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "5297B947-3D4C-4EA4-860E-F24F40C8353D";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		B59FA7AE191D2B6000C774DF /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: liming dong (K2A3FBSEB3)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YiMark/YiMark-Prefix.pch";
+				INFOPLIST_FILE = "YiMark/YiMark-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5297B947-3D4C-4EA4-860E-F24F40C8353D";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		B59FA7AF191D2B6000C774DF /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YiMark.app/YiMark";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YiMark/YiMark-Prefix.pch";
+				INFOPLIST_FILE = "YiMarkTests/YiMarkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Distribution;
+		};
 		BBE12C0B1917F28A0079870B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -339,7 +399,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: hangzhou caizhu network technology co., LTD.";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -353,6 +414,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "5297B947-3D4C-4EA4-860E-F24F40C8353D";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -366,7 +429,8 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: hangzhou caizhu network technology co., LTD.";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -374,6 +438,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "5297B947-3D4C-4EA4-860E-F24F40C8353D";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -382,11 +447,15 @@
 		BBE12C0E1917F28A0079870B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: liming dong (K2A3FBSEB3)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YiMark/YiMark-Prefix.pch";
 				INFOPLIST_FILE = "YiMark/YiMark-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5297B947-3D4C-4EA4-860E-F24F40C8353D";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -395,11 +464,15 @@
 		BBE12C0F1917F28A0079870B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: liming dong (K2A3FBSEB3)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YiMark/YiMark-Prefix.pch";
 				INFOPLIST_FILE = "YiMark/YiMark-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5297B947-3D4C-4EA4-860E-F24F40C8353D";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -412,13 +485,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YiMark/YiMark-Prefix.pch";
 				INFOPLIST_FILE = "YiMarkTests/YiMarkTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -429,13 +502,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YiMark/YiMark-Prefix.pch";
 				INFOPLIST_FILE = "YiMarkTests/YiMarkTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -447,6 +520,7 @@
 			buildConfigurations = (
 				BBE12C0B1917F28A0079870B /* Debug */,
 				BBE12C0C1917F28A0079870B /* Release */,
+				B59FA7AD191D2B6000C774DF /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -456,6 +530,7 @@
 			buildConfigurations = (
 				BBE12C0E1917F28A0079870B /* Debug */,
 				BBE12C0F1917F28A0079870B /* Release */,
+				B59FA7AE191D2B6000C774DF /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -465,6 +540,7 @@
 			buildConfigurations = (
 				BBE12C111917F28A0079870B /* Debug */,
 				BBE12C121917F28A0079870B /* Release */,
+				B59FA7AF191D2B6000C774DF /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

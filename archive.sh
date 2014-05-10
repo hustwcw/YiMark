@@ -13,4 +13,4 @@ sed  -i -e "/CFBundleDisplayName/{n; s/\(<string>\).*\(<\/string>\)/\1$2\2/; }" 
 # 
 srcDir=`pwd`
 xcodebuild -target YiMark -sdk iphoneos build
-xcrun -sdk iphoneos PackageApplication -v "build/Release-iphoneos/YiMark.app" -o "$srcDir/build/release/$2_$1.ipa"
+xcrun -sdk iphoneos PackageApplication -v "build/Release-iphoneos/YiMark.app" -o "$srcDir/build/release/$1.ipa" --sign "hangzhou caizhu network technology co., LTD." --embed "Inhouse_Distribution.mobileprovision"
