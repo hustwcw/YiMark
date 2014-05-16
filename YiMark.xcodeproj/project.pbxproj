@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB051F0519191E4E009DB1D4 /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB051F0419191E4E009DB1D4 /* test.plist */; };
+		BB051F0519191E4E009DB1D4 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB051F0419191E4E009DB1D4 /* config.plist */; };
 		BBE12BD91917F28A0079870B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE12BD81917F28A0079870B /* UIKit.framework */; };
 		BBE12BDB1917F28A0079870B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE12BDA1917F28A0079870B /* Foundation.framework */; };
 		BBE12BDD1917F28A0079870B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE12BDC1917F28A0079870B /* CoreGraphics.framework */; };
@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BB051F0419191E4E009DB1D4 /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test.plist; sourceTree = "<group>"; };
+		BB051F0419191E4E009DB1D4 /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		BBE12BD41917F28A0079870B /* YiMark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YiMark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE12BD81917F28A0079870B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BBE12BDA1917F28A0079870B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -132,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				BBE12BE01917F28A0079870B /* YiMark-Info.plist */,
-				BB051F0419191E4E009DB1D4 /* test.plist */,
+				BB051F0419191E4E009DB1D4 /* config.plist */,
 				BBE12BE11917F28A0079870B /* InfoPlist.strings */,
 				BBE12BE41917F28A0079870B /* main.m */,
 				BBE12BE61917F28A0079870B /* YiMark-Prefix.pch */,
@@ -245,7 +245,7 @@
 				BBE12BEF1917F28A0079870B /* Default-568h@2x.png in Resources */,
 				BBE12BF51917F28A0079870B /* ViewController.xib in Resources */,
 				BBE12C141917F7A50079870B /* Icon.png in Resources */,
-				BB051F0519191E4E009DB1D4 /* test.plist in Resources */,
+				BB051F0519191E4E009DB1D4 /* config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

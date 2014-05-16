@@ -18,7 +18,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"plist"];
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"config" ofType:@"plist"];
     NSLog(@"%@", plistPath);
     NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
     NSString *url = [dictionary objectForKey:@"Website"];

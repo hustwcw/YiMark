@@ -1,3 +1,4 @@
+# 脚本接收4个参数:AppID, AppName, AppIcon, URL
 if [ $# -ne 3 ];then
 echo "usage: argument 1:APPID 2:APPName 3:URL"
 exit 1
