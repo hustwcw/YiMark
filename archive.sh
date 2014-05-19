@@ -13,7 +13,7 @@ sed  -i -e "/CFBundleDisplayName/{n; s/\(<string>\).*\(<\/string>\)/\1$2\2/; }" 
 /usr/libexec/plistbuddy -c "SET :Website '$4'" $srcDir/YiMark/config.plist
 
 #
-curl -o Icon.png $3
+curl -o "$srcDir/Icon.png" $3
 
 security -v unlock-keychain -p "123456" "/Users/tck/Library/Keychains/login.keychain"
 xcodebuild -target YiMark -sdk iphoneos build
