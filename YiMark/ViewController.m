@@ -29,6 +29,13 @@
 }
 
 
+// hide the status bar
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

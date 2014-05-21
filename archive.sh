@@ -5,6 +5,7 @@ exit 1
 fi
 
 srcDir="/Users/tck/Documents/Projects/YiMark"
+cd $srcDir
 # modify APPID, Bundle Display Name and the Website url
 sed  -i -e "/CFBundleIdentifier/{n; s/\(<string>\).*\(<\/string>\)/\1com.yimark.$1\2/; }" $srcDir/YiMark/YiMark-Info.plist
 sed  -i -e "/CFBundleDisplayName/{n; s/\(<string>\).*\(<\/string>\)/\1$2\2/; }" $srcDir/YiMark/YiMark-Info.plist
@@ -13,7 +14,7 @@ sed  -i -e "/CFBundleDisplayName/{n; s/\(<string>\).*\(<\/string>\)/\1$2\2/; }" 
 /usr/libexec/plistbuddy -c "SET :Website '$4'" $srcDir/YiMark/config.plist
 
 #
-curl -o Icon.png $3
+curl -o "$srcDir/Icon.png" $3
 
 security -v unlock-keychain -p "123456" "/Users/tck/Library/Keychains/login.keychain"
 xcodebuild -target YiMark -sdk iphoneos build
